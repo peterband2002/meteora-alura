@@ -1,0 +1,83 @@
+Breakpoint: é onde o bootstrap trabalha para definir layouts. Por exemplo, 768 é quando a tela passa de tablet para computador
+mx-auto: m-margem x-direita e esquerda autor
+g-4: g-gap (dá um espaçamento entre elementos)
+Técnica Emmet: são abreviações para criação de componentes html. Ex: div*3>div*3. Essa abreviação cria três divs com três divs dentro de cada
+
+Uma outra informação importante que compõe a classe é pra qual lado esse espaçamento será aplicado, temos algumas opções:
+
+t significa top ou topo e é aplicado superiormente
+b vem de bottom e é aplicado abaixo ou inferiormente
+s vem de start e se refere ao left ou lado esquerdo do elemento
+evem de end e se refere ao right ou lado direito do elemento
+x do eixo x ou horizontal, é aplicado à esquerda e direita do elemento
+y do eixo y ou vertical, é aplicado acima e abaixo do elemento
+blank aplica em todos os 4 lados do elemento
+
+Por último, só ficou faltando dizer qual o valor que será aplicado de espaçamento, o que varia de 0 até 5 e é utilizado o rem como unidade de medida padrão:
+
+0 elimina o espaçamento já definido
+1 ou 0.25rem
+2 ou 0.5rem
+3 ou 1rem
+4 ou 1.5rem
+5 ou 3rem
+auto calcula automaticamente um valor para a propriedade margin ou m.
+
+Um ponto interessante, é que ocorre um cálculo em que a variável Sass $spacer é multiplicada ao valor em rem da classe. Por exemplo, o 1 corresponde ao valor $spacer * 0.25 e isso irá ocorrer para todos os outros. Com isso, é possível modificar o valor da variável para outro valor a ser multiplicado e caso não aconteça, irá seguir o valor padrão em rem.
+
+Ex:
+
+No HTML
+
+<h1 class="ms-1">Olá Mundo!</h1>
+
+No CSS:
+
+.ms-1 {
+  margin-left: ($spacer * .25) !important;
+}
+
+Como o d-flex definido na classe de um elemento, eu disponho esse elemento na horizontal
+
+my-3: m(margin)y(no eixo y, cima e baixo)
+
+rounded-0: esse comando retira as bordas arredondadas de um componente
+
+py-3: p(padding)y(no eixo y, cima e baixo)
+
+d-block: d(diplay), zera a margem
+
+border-0: tirar a borda visível
+
+d-none: esconder um elemento. Alternativamente, dependendo do tamanho da tela, podemos utilizar d-md-none, para esconder quando o tamanho do display for médio, e assim por diante
+d-block: fazer um elemento aparecer. Alternativamente, também dependendo do tamanho da tela, utilizamos d-md-block, para aparecer quando o tamanho do display for médio.
+
+d-flex flex-column align-items-center: esse comando toda o display flexível, dispõe os elementos em coluna, e alinha horizontalmente esses elementos
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
